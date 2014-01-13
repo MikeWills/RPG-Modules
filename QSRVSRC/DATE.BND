@@ -1,0 +1,52 @@
+    /* ********************************************************************** */
+    /* Program . . . . . DATE                                                 */
+    /*                                                                        */
+    /* Created on  . . . 06/08/2006                                           */
+    /*         by  . . . Michael N. Wills                                     */
+    /*                                                                        */
+    /* Description . . . Binding information for DATE.RPGLE                   */
+    /*                                                                        */
+    /* CHANGE LOG:                                                            */
+    /* Date       | Name            | Description                             */
+    /* ---------------------------------------------------------------------- */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /* ************************************************************************/
+             STRPGMEXP  PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE('1.04')
+             EXPORT     SYMBOL(IsValidDate)
+             EXPORT     SYMBOL(ConvertDecimalDateToUsa)
+             EXPORT     SYMBOL(ConvertDecimalDateToIso)
+             EXPORT     SYMBOL(ZeroDateToBlank)
+             EXPORT     SYMBOL(BlankToZeroDate)
+             EXPORT     SYMBOL(DayOfWeek)
+             EXPORT     SYMBOL(IsHoliday)
+             EXPORT     SYMBOL(DecimalDateToDate)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.03')
+             EXPORT     SYMBOL(IsValidDate)
+             EXPORT     SYMBOL(ConvertDecimalDateToUsa)
+             EXPORT     SYMBOL(ConvertDecimalDateToIso)
+             EXPORT     SYMBOL(ZeroDateToBlank)
+             EXPORT     SYMBOL(BlankToZeroDate)
+             EXPORT     SYMBOL(DayOfWeek)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.02')
+             EXPORT     SYMBOL(IsValidDate)
+             EXPORT     SYMBOL(ConvertDecimalDateToUsa)
+             EXPORT     SYMBOL(ConvertDecimalDateToIso)
+             EXPORT     SYMBOL(ZeroDateToBlank)
+             EXPORT     SYMBOL(BlankToZeroDate)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.01')
+             EXPORT     SYMBOL(IsValidDate)
+             EXPORT     SYMBOL(ConvertDecimalDateToUsa)
+             EXPORT     SYMBOL(ConvertDecimalDateToIso)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.00')
+             EXPORT     SYMBOL(IsValidDate)
+             ENDPGMEXP 
