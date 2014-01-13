@@ -3,7 +3,7 @@
        // Program . . . . . DATE
        //
        // Created on  . . . 06/08/2006
-       //         by  . . . Michael N. Wills
+       //         by  . . . Mike Wills (http://mikewills.me)
        //
        // Description . . . Several date functions to make working with dates
        //                   easier.

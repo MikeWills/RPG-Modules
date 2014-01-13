@@ -1,0 +1,52 @@
+    /* ********************************************************************** */
+    /* Program . . . . . STRING                                               */
+    /*                                                                        */
+    /* Created on  . . . 06/27/2006                                           */
+    /*         by  . . . Mike Wills (http://mikewills.me)                     */
+    /*                                                                        */
+    /* Description . . .  Binding information for STRING.RPGLE                */
+    /*                                                                        */
+    /* CHANGE LOG:                                                            */
+    /* Date       | Name            | Description                             */
+    /* ---------------------------------------------------------------------- */
+    /* 12/25/2007 | Mike            | Added case conversion routines          */
+    /* 01/25/2008 | Mike            | Added word wrap routine                 */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /* ************************************************************************/
+             STRPGMEXP  PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE('1.40')
+             EXPORT     SYMBOL(CenterText)
+             EXPORT     SYMBOL(ConvertToUpperCase)
+             EXPORT     SYMBOL(ConvertToLowerCase)
+             EXPORT     SYMBOL(WordWrap)
+             EXPORT     SYMBOL(SanitizeString)
+             EXPORT     SYMBOL(FindReplace)
+             EXPORT     SYMBOL(RtrimZeros)
+             EXPORT     SYMBOL(RightAlign)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.30')
+             EXPORT     SYMBOL(CenterText)
+             EXPORT     SYMBOL(ConvertToUpperCase)
+             EXPORT     SYMBOL(ConvertToLowerCase)
+             EXPORT     SYMBOL(WordWrap)
+             EXPORT     SYMBOL(SanitizeString)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.20')
+             EXPORT     SYMBOL(CenterText)
+             EXPORT     SYMBOL(ConvertToUpperCase)
+             EXPORT     SYMBOL(ConvertToLowerCase)
+             EXPORT     SYMBOL(WordWrap)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.10')
+             EXPORT     SYMBOL(CenterText)
+             EXPORT     SYMBOL(ConvertToUpperCase)
+             EXPORT     SYMBOL(ConvertToLowerCase)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) LVLCHK(*YES) SIGNATURE('1.00')
+             EXPORT     SYMBOL(CenterText)
+             ENDPGMEXP 
