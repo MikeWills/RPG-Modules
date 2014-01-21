@@ -1,0 +1,18 @@
+    /* ********************************************************************** */
+    /* Program . . . . . BANK                                                 */
+    /*                                                                        */
+    /* Created on  . . . 10/09/2012                                           */
+    /*         by  . . . Mike Wills                                           */
+    /*                                                                        */
+    /* Description . . .                                                      */
+    /*                                                                        */
+    /* CHANGE LOG:                                                            */
+    /* Date       | Name            | Description                             */
+    /* ---------------------------------------------------------------------- */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /* ************************************************************************/
+             STRPGMEXP  PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE('1.00')
+                EXPORT     SYMBOL(IsValidRoutingNumber)
+             ENDPGMEXP 

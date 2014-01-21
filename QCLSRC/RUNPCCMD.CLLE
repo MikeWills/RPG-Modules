@@ -1,0 +1,32 @@
+    /* ********************************************************************** */
+    /* Compiler Options:                                                      */
+    /*   COMPILE OPTIONS HERE                                                 */
+    /*                                                                        */
+    /* Program . . . . . RUNPCCMD                                             */
+    /*                                                                        */
+    /* Created on  . . . 01/07/2011                                           */
+    /*         by  . . . Michael N. Wills                                     */
+    /*                                                                        */
+    /* Description . . .                                                      */
+    /*                                                                        */
+    /* To Compile:                                                            */
+    /* *> CRTBNDCL PGM(&O/&ON) SRCFILE(&L/&F)                             <*  */
+    /* *> DLTSPLF FILE(&ON) SPLNBR(*LAST)                                 <*  */
+    /*                                                                        */
+    /* CHANGE LOG:                                                            */
+    /* Date       | Name            | Description                             */
+    /* ---------------------------------------------------------------------- */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /* ************************************************************************/
+             PGM        PARM(&CMD)
+
+             DCL        VAR(&CMD) TYPE(*CHAR) LEN(128)
+
+             STRPCO
+             MONMSG     MSGID(IWS4010)
+
+             STRPCCMD   PCCMD(&CMD) PAUSE(*YES)
+
+             ENDPGM 
