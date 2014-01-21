@@ -1,0 +1,23 @@
+    /* ********************************************************************** */
+    /* Program . . . . . ADVERROR                                             */
+    /*                                                                        */
+    /* Created on  . . .                                                      */
+    /*         by  . . .                                                      */
+    /*                                                                        */
+    /* Description . . .                                                      */
+    /*                                                                        */
+    /* CHANGE LOG:                                                            */
+    /* Date       | Name            | Description                             */
+    /* ---------------------------------------------------------------------- */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /*            |                 |                                         */
+    /* ************************************************************************/
+             STRPGMEXP  PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE('1.10')
+             EXPORT     SYMBOL(ErrorMsg)
+             EXPORT     SYMBOL(PromptMsg)
+             ENDPGMEXP
+
+             STRPGMEXP  PGMLVL(*PRV) SIGNATURE('1.00')
+             EXPORT     SYMBOL(ErrorMsg)
+             ENDPGMEXP 

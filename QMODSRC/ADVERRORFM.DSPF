@@ -1,0 +1,65 @@
+     A*%%TS  DD  20081014  093352  ispa2       REL-V5.0.1  WDSc
+     A* ***********************************************************************
+     A* Compiler Options:
+     A*   COMPILE OPTIONS HERE
+     A*
+     A* File  . . . . . . ADVERRORFM
+     A*   For Program . . ADVERROR
+     A*
+     A* Created on  . . . 08/10/2004
+     A*         by  . . . Micheal N. Wills
+     A*
+     A* Description . . . Display Screen for ADVERROR.
+     A*
+     A* To Compile:
+     A* *> CRTDSPF FILE(MODULES/ADVERRORFM) SRCFILE(MODULES/QMODSRC) -
+     A* *>   SRCMBR(ADVERRORFM)
+     A* *> DLTSPLF FILE(ADVERRORFM) SPLNBR(*LAST)
+     A* *> CRTRPGMOD MODULE(MODULES/ADVERROR) SRCFILE(MODULES/QMODSRC) -
+     A* *>   SRCMBR(ADVERROR)
+     A* *> CRTSRVPGM SRVPGM(MODULES/ADVERROR) OPTION(*DUPPROC)
+     A* *> DLTSPLF FILE(ADVERROR) SPLNBR(*LAST)
+     A*
+     A* CHANGE LOG:
+     A* Date       | Name            | Description
+     A* -----------------------------------------------------------------------
+     A*            |                 |
+     A*            |                 |
+     A*            |                 |
+     A* ***********************************************************************
+     A*%%FD Advance Error Handling Display
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      PRINT
+     A                                      CA12(12)
+     A          R ERRORSCRN
+     A*%%TS  DD  20080118  161343  ispa2       REL-V5.0.1  WDSc
+     A                                      WINDOW(7 15 8 52)
+     A                                      WDWBORDER((*COLOR RED) (*DSPATR RI)-
+     A                                       (*CHAR '        '))
+     A                                      OVERLAY
+     A                                  1 23'Warning'
+     A                                      COLOR(RED)
+     A            WERROR1       50   O  3  2COLOR(RED)
+     A            WERROR2       50   O  4  2COLOR(RED)
+     A            WERROR3       50   O  5  2COLOR(RED)
+     A                                  7  2'F12=Close'
+     A                                      COLOR(BLU)
+     A          R PROMPTSCRN
+     A*%%TS  DD  20081014  093352  ispa2       REL-V5.0.1  WDSc
+     A                                      WINDOW(6 15 10 52)
+     A                                      WDWBORDER((*COLOR BLU) (*DSPATR RI)-
+     A                                       (*CHAR '        '))
+     A                                      OVERLAY
+     A                                  1 20'Are You Sure?'
+     A                                      COLOR(WHT)
+     A            WERROR1       50   O  3  2COLOR(WHT)
+     A            WERROR2       50   O  4  2COLOR(WHT)
+     A            WERROR3       50   O  5  2COLOR(WHT)
+     A                                  9  2'F12=Close'
+     A                                      COLOR(BLU)
+     A            WPROMPT        1   I  7 19COLOR(WHT)
+     A                                      CHECK(ER)
+     A                                  7 21'(Y)es or (N)o'
+     A                                      COLOR(WHT)
+     A*%%GP SCREEN1    01 
