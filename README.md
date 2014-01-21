@@ -1,4 +1,4 @@
 RPG Modules
 ===========
 
-I have gotta tired of rewriting some of these functions all of the time, so here is a library of functions that I use and can be used in your environment. 
+Everyone has a list of those functions that they reuse all of the time. This is a bunch of them that I have created that I use on a regular basis. Please feel free to use them and/or improve upon then via a pull request.  
